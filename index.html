@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page Kopi Mantan Using Tailwindcss</title>
+
+    <!-- TAILWIND CSS -->
+    <link rel="stylesheet" href="./dist/css/tailwind.css" />
+  </head>
+  <body>
+    <!-- START: HEADER SECTION -->
+    <header class="fixed w-full z-50 px-4 md:px-36 bg-red-500">
+      <div class="container mx-auto py-4 md:py-6">
+        <nav class="flex justify-between items-center">
+          <div>
+            <a href="#" class="nav__logo text-white font-medium">Kopi Mantan</a>
+          </div>
+
+          <div
+            class="nav__menu fixed w-3/4 h-full top-0 -right-full p-14 bg-white bg-opacity-40 transition-all duration-300 md:relative md:w-auto md:h-auto md:top-auto md:right-0 md:p-0 md:bg-transparent"
+            id="nav-menu"
+          >
+            <ul class="nav__list md:flex">
+              <li class="nav__item mb-8 md:mb-0 md:ml-10">
+                <a
+                  href="#"
+                  class="nav__link font-medium text-white hover:text-red-600"
+                  >Home</a
+                >
+              </li>
+              <li class="nav__item mb-8 md:mb-0 md:ml-10">
+                <a
+                  href="#"
+                  class="nav__link font-medium text-white hover:text-red-600"
+                  >About</a
+                >
+              </li>
+              <li class="nav__item mb-8 md:mb-0 md:ml-10">
+                <a
+                  href="#"
+                  class="nav__link font-medium text-white hover:text-red-600"
+                  >Promo</a
+                >
+              </li>
+              <li class="nav__item mb-8 md:mb-0 md:ml-10">
+                <a
+                  href="#"
+                  class="nav__link font-medium text-white hover:text-red-600"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+
+            <svg
+              id="nav-close"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="nav__close fill-current absolute top-4 right-4 text-white cursor-pointer md:hidden"
+            >
+              <path
+                d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z"
+              ></path>
+            </svg>
+          </div>
+
+          <svg
+            id="nav-toggle"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            class="nav__toggle fill-current text-white cursor-pointer md:hidden"
+          >
+            <path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z"></path>
+          </svg>
+        </nav>
+      </div>
+    </header>
+    <!-- END: HEADER SECTION -->
+
+    <main>
+      <!-- START: HOME SECTION -->
+      <section class="home bg-red-500 overflow-hidden md:px-36">
+        <div
+          class="home__container container mx-auto h-screen px-4 grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 md:px-0"
+        >
+          <div
+            class="home__img relative justify-self-center self-center w-80 h-52 md:order-1"
+          >
+            <img
+              class="move absolute top-0 left-0"
+              data-speed="-2"
+              src="./src/img/img1.png"
+              alt="Home Image"
+            />
+            <img
+              class="move absolute top-0 left-0"
+              data-speed="2"
+              src="./src/img/img2.png"
+              alt="Home Image"
+            />
+            <img
+              class="move absolute top-0 left-0"
+              data-speed="2"
+              src="./src/img/img3.png"
+              alt="Home Image"
+            />
+            <img
+              class="move absolute top-0 left-0"
+              data-speed="-2"
+              src="./src/img/img4.png"
+              alt="Home Image"
+            />
+            <img
+              class="move absolute top-0 left-0"
+              data-speed="-2"
+              src="./src/img/img5.png"
+              alt="Home Image"
+            />
+            <img
+              class="move absolute top-0 left-0"
+              data-speed="2"
+              src="./src/img/img6.png"
+              alt="Home Image"
+            />
+          </div>
+          <div class="home__data text-white md:self-center md:">
+            <h1
+              class="home__title text-5xl font-bold leading-snug mb-2 md:text-8xl"
+            >
+              Ingat<br />Mantan?
+            </h1>
+            <p class="home__text mb-6 font-medium">
+              Semoga dengan minum kopi ini,<br />kamu bisa melupakannya.
+            </p>
+            <a
+              href="#"
+              class="home__button inline-flex bg-red-600 text-white font-medium py-5 px-8 rounded-lg hover:bg-red-700"
+              >Get Started</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- END: HOME SECTION -->
+    </main>
+
+    <!-- JAVASCRIPT -->
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>

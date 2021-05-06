@@ -1,0 +1,39 @@
+/* FONT GOOGLE */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* SHOW & HIDDEN HEADER MENU */
+.show-menu {
+  right: 0;
+}
+
+/* BG BLUR HEADER MENU */
+.nav__menu {
+  backdrop-filter: blur(10px);
+}
+
+/* RESPONSIVE HERO IMAGE */
+@media screen and (min-width: 768px) {
+  .home__img {
+    width: 375px;
+    height: 289px;
+  }
+
+  .home__img img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .home__img {
+    width: 604px;
+    height: 466px;
+  }
+
+  .home__img img {
+    width: 100%;
+  }
+}
